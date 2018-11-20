@@ -1,0 +1,54 @@
+.global-header {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #e5e5e5;
+
+    // ${breakpointMax('md')`
+    //     justify-content: flex-end;
+    //     padding: 1.2rem 2.8rem;
+    // `}
+
+    // ${breakpointMin('md')`
+    //     justify-content: space-between;
+    //     position: relative;
+    // `}
+}
+
+.global-header__logo-link {
+    align-self: center;
+    // margin-right: auto;
+    width: 48px;
+
+    // ${breakpointMax('md')`
+    //     margin-right: auto;
+    // `}
+}
+
+.global-header__logo {
+    height: auto;
+    width: 100%;
+}
+
+.global-header__nav {
+    // ${breakpointMax('lg')`
+    //     position: absolute;
+    //     top: -100px;
+    // `}
+    // ${breakpointMin('md')`
+
+    // `}
+}
+
+.global-header__search {
+    // ${breakpointMax('lg')`
+    //     display: none;
+    // `}
+}
+
+.global-header__actions {
+    // ${breakpointMin('lg')`
+    //     display: none;
+    // `}
+}

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import MainLayout from 'modules/layout/MainLayout';
+import ProductListContainer from 'modules/catalogue/components/ProductListContainer';
+
 
 class ProductListPage extends Component {
 
@@ -7,7 +10,12 @@ class ProductListPage extends Component {
 		console.log('cat id', id);
 
 		return (
-			<h1>PLP</h1>
+			<MainLayout>
+				<div>
+					<h1>PLP</h1>
+					<ProductListContainer />
+				</div>
+			</MainLayout>
 		)
 	}
 }

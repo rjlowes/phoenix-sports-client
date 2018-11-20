@@ -9,15 +9,22 @@ import rootSaga from 'rootSaga';
 
 export default (history) => {
 	const sagaMiddleware = createSagaMiddleware();
+	const middleware = [routerMiddleware(history), sagaMiddleware];
+	
+	if(process.env.NODE_ENV === 'development') {
+		middleware.push(logger);
+	}
+
 	const store = createStore(
 		connectRouter(history)(rootReducer),
 		// TODO add load state instead of {}
 		{},
 		compose(
 			applyMiddleware(
-				routerMiddleware(history),
-				sagaMiddleware,
-				logger
+				// routerMiddleware(history),
+				// sagaMiddleware,
+				// logger
+				...middleware
 			)
 		)
 	);
