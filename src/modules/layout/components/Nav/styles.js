@@ -7,7 +7,7 @@ const List = styled.ul`
 
 // Item1, Item2, Item3
 const Item = styled.li`
-
+    color: ${props => props.theme.colours.primaryBody};
 `;
 
 List.Item = Item;

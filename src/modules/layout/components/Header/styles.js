@@ -64,7 +64,7 @@ HeaderWrapper.Nav = Nav;
 HeaderWrapper.Actions = Actions;
 HeaderWrapper.Search = Search;
 
-export default HeaderWrapper;
+export { HeaderWrapper, LogoLink, LogoWrapper, Nav, Actions, Search };
 
 // export { LogoLink, LogoWrapper, Nav, Actions };
 
